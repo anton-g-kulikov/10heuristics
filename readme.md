@@ -8,4 +8,4 @@ Anothe line to add to text.
 
 ***
 
-Ок. Added some *markdown* 
+Ок. Added some **markdown** 
