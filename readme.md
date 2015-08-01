@@ -4,7 +4,7 @@
 
 Now I will try to do some basic stuff. And after that I`ll delete this test-repo for the good.
 
-Anothe line to add to text.
+Another line to add to text.
 
 ***
 
