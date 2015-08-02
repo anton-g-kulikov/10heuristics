@@ -1,6 +1,7 @@
 $(function () {
 
 	$('#study').on('click', function(){
+		$('section').addClass('js-section');
 		$('.cover').removeClass('hidden').addClass('js-cover visible');
 		$('.definition').addClass('js-header');
 		$('.description').removeClass('visible').addClass('js-text hidden');
@@ -8,6 +9,7 @@ $(function () {
 	});
 	
 	$('#read').on('click', function(){
+		$('section').removeClass('js-section');
 		$('.cover').removeClass('js-cover visible').addClass('hidden');
 		$('.definition').removeClass('js-header');
 		$('.description').removeClass('js-text hidden').addClass('visible');
@@ -16,7 +18,7 @@ $(function () {
 
     $(document).on('click', '.js-cover', function() {
 		$(this).removeClass('visible').addClass('hidden');
-		$(this).parents('section').find('.js-button').toggleClass('hidden');
+		$(this).parents('.js-section').find('.js-button').toggleClass('hidden');
 	});
 
 	$(document).on('click', '.js-header', function(){
@@ -24,7 +26,7 @@ $(function () {
 	});
 
 	$(document).on('click', '.js-button', function(){
-		$(this).parents('section').find('.js-cover').removeClass('hidden').addClass('visible');
+		$(this).parents('.js-section').find('.js-cover').removeClass('hidden').addClass('visible');
 		$(this).addClass('hidden');
 	});
 
