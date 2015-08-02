@@ -1,33 +1,43 @@
 $(function () {
 
-	$('#study').on('click', function(){
-		$('section').addClass('js-section');
-		$('.cover').removeClass('hidden').addClass('js-cover visible');
-		$('.definition').addClass('js-header interactive');
-		$('.description').removeClass('visible').addClass('js-text hidden');
-		$('.gotit').removeClass('visible').addClass('js-button hidden');
-	});
-	
-	$('#read').on('click', function(){
-		$('section').removeClass('js-section');
-		$('.cover').removeClass('js-cover visible').addClass('hidden');
-		$('.definition').removeClass('js-header interactive');
-		$('.description').removeClass('js-text hidden').addClass('visible');
-		$('.gotit').removeClass('js-button visible').addClass('hidden');
+	var mySwitchersActive = false;
+
+	$('#study').on('click', function() {
+	   mySwitchersActive = true;
+	   $('.js-cover-interactive').addClass('visible');
 	});
 
-    $(document).on('click', '.js-cover', function() {
-		$(this).removeClass('visible').addClass('hidden');
-		$(this).parents('.js-section').find('.js-button').toggleClass('hidden');
+	$('#read').on('click', function() {
+	   mySwitchersActive = false;
+	   $('.js-cover-interactive').removeClass('visible');
+	   $('.js-description-switcher').removeClass('interactive');
+	   $('.js-desctiption-body').removeClass('hidden');
+	   $('.js-btn-cover-switcher').addClass('hidden');
 	});
 
-	$(document).on('click', '.js-header', function(){
-		$(this).next('.js-text').toggleClass('hidden');
+
+	$('.js-cover-interactive').on('click', function() {
+	  if (mySwitchersActive) {
+	  		var $this=$(this);
+	  		$this.removeClass('visible');
+	  		$this.parents('.js-parent-section').find('.js-description-switcher').addClass('interactive');
+			$this.parents('.js-parent-section').find('.js-desctiption-body').addClass('hidden');
+	  		$this.parents('.js-parent-section').find('.js-btn-cover-switcher').removeClass('hidden');
+		}
 	});
 
-	$(document).on('click', '.js-button', function(){
-		$(this).parents('.js-section').find('.js-cover').removeClass('hidden').addClass('visible');
-		$(this).addClass('hidden');
+	$('.js-description-switcher').on('click', function() {
+	  if (mySwitchersActive) {
+	  		var $this=$(this);
+			$this.parents('.js-parent-section').find('.js-desctiption-body').toggleClass('hidden');
+		}
+	});
+
+	$('.js-btn-cover-switcher').on('click', function() {
+	  if (mySwitchersActive) {
+	  		var $this=$(this);
+			$this.parents('.js-parent-section').find('.js-cover-interactive').addClass('visible');
+		}
 	});
 
 });
