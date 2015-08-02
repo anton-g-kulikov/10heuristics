@@ -92,11 +92,6 @@ section {
 	background-color: #F9F8FC;
 }
 
-.js-header {
-	cursor: pointer;
-}
-
-
 .gotit {
 	height: 24px;
 	margin: 0px;
@@ -157,4 +152,8 @@ p {
 
 .hidden {
 	visibility: hidden;
+}
+
+.interactive {
+	cursor: pointer;
 }

@@ -3,7 +3,7 @@ $(function () {
 	$('#study').on('click', function(){
 		$('section').addClass('js-section');
 		$('.cover').removeClass('hidden').addClass('js-cover visible');
-		$('.definition').addClass('js-header');
+		$('.definition').addClass('js-header interactive');
 		$('.description').removeClass('visible').addClass('js-text hidden');
 		$('.gotit').removeClass('visible').addClass('js-button hidden');
 	});
@@ -11,7 +11,7 @@ $(function () {
 	$('#read').on('click', function(){
 		$('section').removeClass('js-section');
 		$('.cover').removeClass('js-cover visible').addClass('hidden');
-		$('.definition').removeClass('js-header');
+		$('.definition').removeClass('js-header interactive');
 		$('.description').removeClass('js-text hidden').addClass('visible');
 		$('.gotit').removeClass('js-button visible').addClass('hidden');
 	});
