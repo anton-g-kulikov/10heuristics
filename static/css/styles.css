@@ -85,7 +85,7 @@ cover h2 {
 }
 
 cover:hover {
-	background-color: #E7E6EC;
+	background-color: #F9F8FC;
 }
 
 .definition {
@@ -100,9 +100,9 @@ cover:hover {
 	height: 24px;
 	margin: 0px;
 	padding: 0px 8px 0px 8px;
-	border: 0;
+	border: 1px solid #5BC8AF;
 	border-radius: 2px;
-	background-color: #F4F3F9;
+	background-color: #FFF;
     color: #5BC8AF;
     font-size: 12px;
     line-height: 1px;
@@ -145,7 +145,6 @@ p {
 .subheader {
 	font-size: 12px;
 	line-height: 24px;
-	margin: 12px 0px -24px;
 }
 
 
