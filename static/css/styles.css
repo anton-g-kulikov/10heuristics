@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222;
+    background-color: #F7F6FC;
+    margin: 0px;
+    padding: 36px;
+}
+
+main {
+	padding: 36px 0;
+}
+
+
+aside {
+	margin: 24px 0;
+}
+
+
+label:hover {
+	cursor: pointer;
+	color: #5BC8AF;
+}
+
+
+aside label input {
+    position:absolute;
+    top:-20px;
+}
+
+aside label span {
+	padding: 8px 12px;
+	border-radius: 2px;
+}
+
+
+aside input:checked + span {
+	background-color: #5BC8AF;
+    color:#F7F7F7;
+}
+
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section {
+
+	flex: 0 0 226px;
+
+	position: relative;
+
+	margin-right: 24px;
+	padding: 24px;
+
+	margin-bottom: 24px;
+	
+	background: #fff;
+	box-shadow: #BEBCC4 0px 2px 2px;
+
+}
+
+cover {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: absolute;
+	top: 0; bottom: 0; right: 0; left: 0;
+	color: #5BC8AF;
+	/*color: #A14EBF;*/
+	background-color: #F4F3F9;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+cover h2 {
+	font-size: 144px;
+	line-height: 24px;
+}
+
+cover:hover {
+	background-color: #E7E6EC;
+}
+
+.definition {
+	cursor: pointer;
+}
+
+.description {
+	visibility: visible;
+}
+
+.gotit {
+	height: 24px;
+	margin: 0px;
+	padding: 0px 8px 0px 8px;
+	border: 0;
+	border-radius: 2px;
+	background-color: #F4F3F9;
+    color: #5BC8AF;
+    font-size: 12px;
+    line-height: 1px;
+}
+.gotit:hover {
+	cursor: pointer;
+	color: #FFF;
+	background-color: #5BC8AF;
+}
+
+
+footer {
+	font-size: 12px;
+}
+
+/*typography*/
+
+h1 {
+	font-size: 32px;
+	line-height: 32px;
+	margin: 0px 0px -8px 0px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0px;
+}
+
+p {
+	margin: 12px 0;
+}
+
+
+/*helpers*/
+
+.visible {
+	visibility: visible;
+}
+
+.hidden {
+	visibility: hidden;
+}
