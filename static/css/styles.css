@@ -66,7 +66,7 @@ section {
 
 }
 
-cover {
+.cover {
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -79,12 +79,12 @@ cover {
 	visibility: hidden;
 }
 
-cover h2 {
+.cover h2 {
 	font-size: 144px;
 	line-height: 24px;
 }
 
-cover:hover {
+.cover:hover {
 	background-color: #F9F8FC;
 }
 
