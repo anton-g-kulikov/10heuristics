@@ -1,11 +1,3 @@
-#So this is it. 
+#10hueristics.info 
 
-##I`m learning git and GitHub.
-
-Now I will try to do some basic stuff. And after that I`ll delete this test-repo for the good.
-
-Another line to add to text.
-
-***
-
-Ок. Added some **markdown** 
+To read and study.
