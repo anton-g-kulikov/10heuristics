@@ -51,8 +51,12 @@ article {
 }
 
 section {
-
+	display: flex;
 	flex: 0 0 226px;
+
+	flex-direction: column;
+	justify-content:space-between;
+	align-items:flex-start;
 
 	position: relative;
 
@@ -88,13 +92,10 @@ section {
 	background-color: #F9F8FC;
 }
 
-.definition {
+.js-header {
 	cursor: pointer;
 }
 
-.description {
-	visibility: visible;
-}
 
 .gotit {
 	height: 24px;
