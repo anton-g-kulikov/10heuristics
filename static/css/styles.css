@@ -92,6 +92,10 @@ section {
 	background-color: #F9F8FC;
 }
 
+.definition.interactive:hover {
+	color: #5BC8AF;
+}
+
 .gotit {
 	height: 24px;
 	margin: 0px;
@@ -103,6 +107,7 @@ section {
     font-size: 12px;
     line-height: 1px;
 }
+
 .gotit:hover {
 	cursor: pointer;
 	color: #FFF;
