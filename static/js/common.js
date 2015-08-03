@@ -17,8 +17,8 @@ $(function () {
 
 
 	$('.js-cover-interactive').on('click', function() {
-	  if (mySwitchersActive) {
-	  		var $this=$(this);
+	    if (mySwitchersActive) {
+	  		var $this = $(this);
 	  		$this.removeClass('visible');
 	  		$this.parents('.js-parent-section').find('.js-description-switcher').addClass('interactive');
 			$this.parents('.js-parent-section').find('.js-desctiption-body').addClass('hidden');
@@ -27,17 +27,13 @@ $(function () {
 	});
 
 	$('.js-description-switcher').on('click', function() {
-	  if (mySwitchersActive) {
-	  		var $this=$(this);
-			$this.parents('.js-parent-section').find('.js-desctiption-body').toggleClass('hidden');
-		}
+  		var $this = $(this);
+		$this.parents('.js-parent-section').find('.js-desctiption-body').toggleClass('hidden');
 	});
 
 	$('.js-btn-cover-switcher').on('click', function() {
-	  if (mySwitchersActive) {
-	  		var $this=$(this);
-			$this.parents('.js-parent-section').find('.js-cover-interactive').addClass('visible');
-		}
+  		var $this = $(this);
+		$this.parents('.js-parent-section').find('.js-cover-interactive').addClass('visible');
 	});
 
 });
