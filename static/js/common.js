@@ -5,6 +5,7 @@ $(function () {
 	$('#study').on('click', function() {
 	   mySwitchersActive = true;
 	   $('.js-cover-interactive').addClass('visible');
+	   $('.js-numeral').toggle();
 	});
 
 	$('#read').on('click', function() {
@@ -13,6 +14,7 @@ $(function () {
 	   $('.js-description-switcher').removeClass('interactive');
 	   $('.js-desctiption-body').removeClass('hidden');
 	   $('.js-btn-cover-switcher').addClass('hidden');
+	   $('.js-numeral').toggle();
 	});
 
 
