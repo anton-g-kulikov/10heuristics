@@ -27,8 +27,10 @@ $(function () {
 	});
 
 	$('.js-description-switcher').on('click', function() {
-  		var $this = $(this);
-		$this.parents('.js-parent-section').find('.js-desctiption-body').toggleClass('hidden');
+		if (mySwitchersActive) {
+	  		var $this = $(this);
+			$this.parents('.js-parent-section').find('.js-desctiption-body').toggleClass('hidden');
+		}
 	});
 
 	$('.js-btn-cover-switcher').on('click', function() {
