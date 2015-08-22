@@ -41,16 +41,41 @@ aside input:checked + span {
 }
 
 article {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 
 section {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+<<<<<<< HEAD
+	-webkit-flex: 0 0 226px;
+	    -ms-flex: 0 0 226px;
+	        flex: 0 0 226px;
+
+	-webkit-flex-direction: column;
+
+	    -ms-flex-direction: column;
+
+	        flex-direction: column;
+	-webkit-justify-content:space-between;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+	-webkit-align-items:flex-start;
+	    -ms-flex-align:start;
+	        align-items:flex-start;
+
+=======
 	flex: 0 0 226px;
 	flex-direction: column;
 	justify-content:space-between;
 	align-items:flex-start;
+>>>>>>> origin/master
 	position: relative;
 	margin-right: 24px;
 	padding: 24px;
@@ -60,9 +85,15 @@ section {
 }
 
 .cover {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content:center;
-	align-items:center;
+	-webkit-justify-content:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-align-items:center;
+	    -ms-flex-align:center;
+	        align-items:center;
 	position: absolute;
 	top: 0; bottom: 0; right: 0; left: 0;
 	color: #FFF;
