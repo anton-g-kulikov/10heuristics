@@ -53,7 +53,7 @@ section {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-<<<<<<< HEAD
+
 	-webkit-flex: 0 0 226px;
 	    -ms-flex: 0 0 226px;
 	        flex: 0 0 226px;
@@ -70,12 +70,6 @@ section {
 	    -ms-flex-align:start;
 	        align-items:flex-start;
 
-=======
-	flex: 0 0 226px;
-	flex-direction: column;
-	justify-content:space-between;
-	align-items:flex-start;
->>>>>>> origin/master
 	position: relative;
 	margin-right: 24px;
 	padding: 24px;
