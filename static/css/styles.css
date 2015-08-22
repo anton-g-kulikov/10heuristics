@@ -3,7 +3,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #222;
-    background-color: #F9F8FC;
+    background-color: #F4F4F9;
     margin: 0px;
     padding: 36px;
 }
@@ -16,17 +16,14 @@ main {
 	padding: 36px 0;
 }
 
-
 aside {
 	margin: 24px 0;
 }
 
-
-label:hover {
+aside label:hover {
 	cursor: pointer;
 	color: #5BC8AF;
 }
-
 
 aside label input {
     position:absolute;
@@ -38,12 +35,10 @@ aside label span {
 	border-radius: 2px;
 }
 
-
 aside input:checked + span {
 	background-color: #5BC8AF;
-    color:#F7F7F7;
+    color:#FFF;
 }
-
 
 article {
 	display: -webkit-flex;
@@ -58,6 +53,7 @@ section {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+<<<<<<< HEAD
 	-webkit-flex: 0 0 226px;
 	    -ms-flex: 0 0 226px;
 	        flex: 0 0 226px;
@@ -74,16 +70,18 @@ section {
 	    -ms-flex-align:start;
 	        align-items:flex-start;
 
+=======
+	flex: 0 0 226px;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items:flex-start;
+>>>>>>> origin/master
 	position: relative;
-
 	margin-right: 24px;
 	padding: 24px;
-
 	margin-bottom: 24px;
-	
 	background: #fff;
 	box-shadow: #BEBCC4 0px 2px 2px;
-
 }
 
 .cover {
@@ -98,9 +96,8 @@ section {
 	        align-items:center;
 	position: absolute;
 	top: 0; bottom: 0; right: 0; left: 0;
-	color: #5BC8AF;
-	/*color: #A14EBF;*/
-	background-color: #F4F3F9;
+	color: #FFF;
+	background-color: #fff;
 	cursor: pointer;
 	visibility: hidden;
 }
@@ -108,10 +105,20 @@ section {
 .cover h2 {
 	font-size: 144px;
 	line-height: 24px;
+	color: #B0B0BD;
 }
 
-.cover:hover {
-	background-color: #F9F8FC;
+.cover:hover h2{
+	color: #5BC8AF;
+}
+
+.numeral {
+	position: absolute;
+	top: 20px;
+	left: 8px;
+	font-size: 10px;
+	color: #5BC8AF;
+	background: #FFF;
 }
 
 .definition.interactive:hover {
