@@ -1,3 +1,3 @@
-#10hueristics.info 
+#10heuristics.info 
 
 To read and study.
