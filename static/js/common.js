@@ -35,10 +35,15 @@ $(function () {
 		}
 	});
 
-	$('.js-btn-cover-switcher').on('click', function() {
-  		var $this = $(this);
-		$this.parents('.js-parent-section').find('.js-cover-interactive').addClass('visible');
-	});
+        $('.js-btn-cover-switcher').on('click', function() {
+                var $this = $(this);
+                var $parent = $this.parents('.js-parent-section');
+
+                $parent.find('.js-cover-interactive').addClass('visible');
+                $parent.find('.js-description-switcher').removeClass('interactive');
+                $parent.find('.js-desctiption-body').addClass('hidden');
+                $this.addClass('hidden');
+        });
 
 });
 
