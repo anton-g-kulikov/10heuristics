@@ -41,7 +41,7 @@ $(function () {
 
                 $parent.find('.js-cover-interactive').addClass('visible');
                 $parent.find('.js-description-switcher').removeClass('interactive');
-                $parent.find('.js-desctiption-body').addClass('hidden');
+                $parent.find('.js-description-body').addClass('hidden');
                 $this.addClass('hidden');
         });
 
